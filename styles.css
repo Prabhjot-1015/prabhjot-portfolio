@@ -1,1 +1,200 @@
 /* css styles */
+/* ============================= */
+/*      GENERAL STYLING          */
+/* ============================= */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.5;           /* APA line spacing ~1.5 */
+    color: #000000;             /* Black text for APA */
+    background-color: #ffffff;  /* White background */
+    margin: 0;
+    padding: 0;
+}
+
+/* ============================= */
+/*        LINKS                  */
+/* ============================= */
+a {
+    color: #0000EE;             /* Standard APA link blue */
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #551A8B;             /* Dark purple on hover */
+}
+
+/* ============================= */
+/*        HEADER / NAVBAR        */
+/* ============================= */
+header {
+    background-color: #f2f2f2;  /* Light gray for professionalism */
+    color: #000000;
+    padding: 15px 0;
+    border-bottom: 1px solid #cccccc;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav a {
+    font-weight: normal;
+    font-size: 16px;
+}
+
+/* ============================= */
+/*       HERO / HOME SECTION     */
+/* ============================= */
+.hero {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+
+.hero p {
+    font-size: 1.1rem;
+}
+
+/* ============================= */
+/*       PROFILE IMAGE           */
+/* ============================= */
+img.profile-photo {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 2px solid #000000;
+}
+
+/* ============================= */
+/*        SECTION STYLING         */
+/* ============================= */
+section {
+    padding: 50px 20px;
+    max-width: 900px;
+    margin: 0 auto 30px auto;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #000000;
+    margin-bottom: 15px;
+    text-align: left;
+    font-weight: normal;
+}
+
+p {
+    font-size: 1rem;
+}
+
+/* ============================= */
+/*        BUTTONS                */
+/* ============================= */
+button, .button {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover, .button:hover {
+    background-color: #333333;
+}
+
+/* ============================= */
+/*       PROJECT CARDS           */
+/* ============================= */
+.project-card {
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #f9f9f9;
+}
+
+/* ============================= */
+/*        SKILLS / TECH          */
+/* ============================= */
+.skill {
+    display: inline-block;
+    background-color: #cccccc;
+    color: #000000;
+    padding: 4px 12px;
+    border-radius: 15px;
+    margin: 4px 4px 4px 0;
+    font-size: 0.9rem;
+}
+
+/* ============================= */
+/*       CONTACT FORM            */
+/* ============================= */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+input, textarea {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #cccccc;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+}
+
+form button {
+    width: 140px;
+    align-self: flex-start;
+}
+
+/* ============================= */
+/*          FOOTER               */
+/* ============================= */
+footer {
+    background-color: #f2f2f2;
+    color: #000000;
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 0.9rem;
+}
+
+/* ============================= */
+/*          RESPONSIVE           */
+/* ============================= */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    section {
+        padding: 30px 15px;
+    }
+}
