@@ -1,0 +1,32 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "PrabhjotMBA Portfolio"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: about.qmd
+        text: About Me
+      - href: skills.qmd
+        text: Skills
+      - href: experience.qmd
+        text: Experience
+      - href: projects.qmd
+        text: Projects
+      - href: resume.qmd
+        text: Resume
+      - href: contact.qmd
+        text: Contact
+    
+
+format:
+  html:
+    theme: minty
+    css: styles.css
+    toc: true
+    page-layout: full
+    dark-mode: true
+    allow-html: true
