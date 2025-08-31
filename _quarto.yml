@@ -3,25 +3,21 @@ project:
   output-dir: _site
 
 website:
-  title: "PrabhjotMBA Portfolio"
+  title: "Your Name – MBA Portfolio"
   navbar:
     left:
       - href: index.qmd
         text: Home
-      - href: about.qmd
-        text: About Me
-      - href: skills.qmd
-        text: Skills
-      - href: experience.qmd
-        text: Experience
-      - href: projects.qmd
-        text: Projects
       - href: resume.qmd
         text: Resume
+      - href: projects.qmd
+        text: Projects
+      - href: skills.qmd
+        text: Skills
       - href: contact.qmd
         text: Contact
-    
 
+    
 format:
   html:
     theme: minty
